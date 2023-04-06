@@ -1,0 +1,145 @@
+1.HTML 5 기본 구조
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>[문서제목]</title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+2.HTML5 기본 태그
+1)<h1>~<6>: 제목(heading)을 나내며 <h1>이 가장 크고 굵게 <h6>이 가장 작게 표시
+2)<p>: 단락(paragraph, 문단 나눔)
+3)<br>: 줄바꿈(break)
+4)<hr>: 수평선(horizontal line)
+
+3.텍스트 서식 테그
+1)<b>: 굵은 효과(텍스트를 굵게 표현)
+2)<i>: 단순한 이탤릭
+3)<em>: 강조 의미표함 태그
+4)<q>: 인용한 내용을 표시+따옴표(줄바꿈X)
+5)<blockquote>: 줄을 바꿈+들여쓰기
+6)<mark>: 하이라이팅
+7)<del>: 가로줄을 만들어 삭제 효과 부여
+8)<ins>: 밑에 가로줄 만들어 삽입 효과 부여
+9)<sup>: 위첨자 태그
+10)<sub>: 아래첨자 태그
+11)특수문자
+   -&nbsp:(공백)
+   -&it:(<)
+   -&gt:(>)
+   -&amp:(&)
+   -&quot:(")
+
+4.이미지,링크태그
+1)이미지의 삽입
+   -<img src="이미지주소" alt="대체문자열">
+2)HTML링크(Link)연결:<a>
+  -<a href="링크주소">HTML 링크</a>
+
+5.리스트 태그
+1)번호 없음
+<ul>
+  <li>
+
+2)번호 있음
+<ol>
+  <li>
+2-1)타입 바꾸는 것
+<ol type="A" start="10">
+  <li>
+*type
+ -1(숫자)
+ -a(영문 소문자)
+ -A(영문 대문자)
+ -i(로마숫자 소문자)
+ -I(로마숫자 대문자)
+
+6.표 작성
+1)<table=border="1px solid">: 표 작성 태그
+2)<caption>: 표 제목
+2)<tr>: 행 지정
+3)<td>: 열 지정
+4)<th>: 제목행
+5)<td rowspan="합칠 셀의 개수">내용</td>: 행을 합침
+6)<td colspan="합칠 열의 개수">내용</td>: 열을 합침
+
+7.미디어 태그
+1)이미지 태그
+<a href = "사이트 주소" target = _blank>
+<img src = "그림 경로" height = "100px"></a>
+:이미지를 누를 시 링크로 이동
+(width, height:너비와 높이 지정)
+2)오디오 태그
+<audio src="오디오 주소" controls>
+-속성
+autoplay: 오디오를 자동 재생함
+controls: 재생 도구를 표시함
+loop: 오디오를 반복 재생함
+preload: 오디오를 미리 다운로드함
+3)비디오 태그
+<video src="비디오 주소
+
+8.블록태그와 인라인태그
+1)<div>태그(블록태그)
+  -태그를 사용하여 공간을 분할하면 한 줄을 전부 차지
+2)<span>태그(인라인태그)
+  -텍스트 크기만큼 공간을 차지
+
+9.시맨틱 태그 종류
+1)<header>: 페이지나 색션의 머리말 표현 페이지 제목, 페이지를 소개하는 간단한 설명
+2)<nav>: 하이퍼링크들을 모아 놓은 특별한 섹션 페이지 내 목차를 만드는 용도
+3)<section>
+  -문서의 장 혹은 절을 구성하는 역할로 여러<section>가능
+  -제목태그(h1~h6)를 사용하여 절 혹은 섹션의 주제 기입
+4)<article>: 본문과 연관 있지만, 독립적인 콘텐트를 담는 영역 혹은 보조 기사, 블로그 포스트, 댓글 등 기타 독립적인 내용
+5)<aside>: 본문에서 약간 벗어난 노트나 팁 신문, 잡지에서 주요 기사 옆 관련 기사, 삽입 어구로 표시된 논평 등 페이지의 오른쪽이나 왼쪽에 주로 배치
+6)<footer>:꼬리말 영역, 주로 저자나 저작권 정보
+
+10.폼(form) 태그
+<form action="처리할페이지주소" method="GET/POST"></form>
+1)action 속성: 데이터를 처리할 서버 상의 스크립트 파일주소
+2)method 속성: 입력받은 데이터를 서버에 전달할 방식 지정
+  -GET: 주소에 데이터를 추가하여 전달하는 방식
+  -POST: 데이터를 별도로 첨부하여 전달하는 방식
+3)텍스트 박스
+  <textarea id="아이디" cols="너비" rows="줄 수"></textarea>
+4)드롭 다운
+  <select>
+	<option value="값" selected/><option>
+ </select>
+5)input 요소 타입 종류
+  -<input type="text">: 문자 타입 데이터 입력
+  -<input type="password">: 문자 비밀번호 데이터 입력
+  -<input type="radio" name="이름" value="값" checked/>
+   : 라디오 버튼(여러개중 하나 선택, 요소들의 name이 모두 같아야 함)
+  -<input type="checkbox" name="이름" value="값" checked/>
+   : 체크박스(다중 선택가능, 요소들의 name이 모두 같아야 함)
+  -<input type="file">: 파일 선택
+  -<input type="tel">: 전화번호
+  -<input type="email">: 이메일
+  -<input type="date/month/week/time">: 날짜/달/주/시간
+  -<input type="button">: 버튼 입력
+  -<input type="submit" value="값">: 전송 버튼
+  -<input type="reset" value="값">: 취소 버튼
+  -<input type="range" min="최솟값" max="최대값">: 숫자막대
+  -<input type="number"  min="최솟값" max="최대값">: 숫자
+  -<input type="search">: 검색
+6)input 태그 속성
+  -autofocus: 입력필드에 마우스커서 표시
+  -placeholder: 텍스트필드에 힌트 표시
+  -readonly: 읽기 전용 지정
+  -required: 필수 입력 지정
+  -max, min: 숫자 입력 필드에서 최대, 최소값 지정
+  -maxlength, minlength: 텍스트필드에서 입력가능 최대값, 최소값
+  -step: 숫자 필드에서 증감 간격 지정
+  -size: 텍스트필드에서 화면에 표시할 크기 지정
+  -list:  연결할 데이터 목록 지정
+7)폼요소 그룹화
+  -<fieldset>: 제목
+  -<legend>: 안에 들어갈 내용
+8)레이블 라벨
+  -<label>: 분류하여 저장되게
